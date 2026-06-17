@@ -6,8 +6,8 @@ from PIL import Image
 # 1. Cache the model load so it doesn't crash your app's memory
 @st.cache_resource
 def load_classifier():
-    # If you updated your model format to .keras (Option B from earlier), change this string to "mobilenetv2.keras"
-    return tf.keras.models.load_model("mobilenetv2_saved_model")
+    # Update this exact line to your new filename
+    return tf.keras.models.load_model("mobilenetv2.keras")
 
 st.title("AI Image Classification App (MobileNetV2)")
 
