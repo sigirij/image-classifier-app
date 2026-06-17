@@ -11,8 +11,8 @@ st.write("Files here:", os.listdir("."))
 # 1. Cache the model load so it doesn't crash your app's memory
 @st.cache_resource
 def load_classifier():
-    # Update this exact line to your new filename
-    return tf.keras.models.load_model("mobilenetv2.keras")
+    # Change this line to match the exact file in your repository
+    return tf.keras.models.load_model("mobilenetv2_model.h5")
 
 st.title("AI Image Classification App (MobileNetV2)")
 
