@@ -2,6 +2,11 @@ import streamlit as st
 import tensorflow as tf
 import numpy as np
 from PIL import Image
+import os # Add this import
+
+st.warning("Debugging File Path:")
+st.write("Current Directory:", os.getcwd())
+st.write("Files here:", os.listdir("."))
 
 # 1. Cache the model load so it doesn't crash your app's memory
 @st.cache_resource
